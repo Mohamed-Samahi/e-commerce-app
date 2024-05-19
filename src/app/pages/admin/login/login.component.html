@@ -1,1 +1,22 @@
-<p>login works!</p>
+<div class="container">
+    <div class="left-section"></div>
+    <div class="right-section">
+        <div class="login-container">
+            <form class="login-form" (submit)="onLogin()">
+                <h2 class="login-title"><i class="fas fa-user-circle"></i> Login</h2>
+                <div class="form-control">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" name="userName" [(ngModel)]="loginData.userName" placeholder="Username"
+                        id="username" required>
+                </div>
+                <div class="form-control">
+                    <i class="fas fa-lock icon"></i>
+                    <input type="password" name="password" [(ngModel)]="loginData.password" placeholder="Password"
+                        id="password">
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
